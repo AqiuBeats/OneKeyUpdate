@@ -28,9 +28,4 @@ public class NetRequest {
         @GET("{name}")
         Observable<Update> getUpdateService(@Path("name") String name);
     }
-
-    //http://192.168.10.39:8080/11.apk
-    private interface GetAPKService {
-
-    }
 }

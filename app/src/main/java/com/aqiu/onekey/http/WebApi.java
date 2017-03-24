@@ -6,6 +6,6 @@ package com.aqiu.onekey.http;
  * Created by aqiu on 2016/8/11.
  */
 public class WebApi {
-    public static final String BASE_URL = "http://192.168.10.39:8080";
+    public static final String BASE_URL = "http://192.168.10.23:8080";
 }
 

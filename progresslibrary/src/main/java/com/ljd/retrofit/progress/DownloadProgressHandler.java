@@ -6,6 +6,7 @@ import android.os.Message;
 
 /**
  * Created by ljd on 4/12/16.
+ *
  */
 public abstract class DownloadProgressHandler extends ProgressHandler{
 
@@ -15,7 +16,6 @@ public abstract class DownloadProgressHandler extends ProgressHandler{
     @Override
     protected void sendMessage(ProgressBean progressBean) {
         mHandler.obtainMessage(DOWNLOAD_PROGRESS,progressBean).sendToTarget();
-
     }
 
     @Override

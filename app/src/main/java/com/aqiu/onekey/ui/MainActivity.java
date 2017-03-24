@@ -1,9 +1,13 @@
 package com.aqiu.onekey.ui;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.CompoundButton;
+import android.widget.Toast;
 
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.aqiu.onekey.R;
 
 import butterknife.BindView;
@@ -36,6 +40,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick(R.id.bt_1)
     public void onClick() {
-        startActivity(new Intent(MainActivity.this,SecondActivity.class));
+                startActivity(new Intent(MainActivity.this,SecondActivity.class));
+
     }
 }

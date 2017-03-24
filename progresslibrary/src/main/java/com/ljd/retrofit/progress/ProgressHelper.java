@@ -1,5 +1,6 @@
 package com.ljd.retrofit.progress;
 
+import android.os.Looper;
 import android.util.Log;
 
 import java.io.IOException;
@@ -25,6 +26,7 @@ public class ProgressHelper {
             //该方法在子线程中运行
             @Override
             public void onProgress(long progress, long total, boolean done) {
+                Log.d("Progress是否在主线程中运行", String.valueOf(Looper.getMainLooper() == Looper.myLooper()));
                 Log.d("progress:",String.format("%d%% done\n",(100 * progress) / total));
                 if (mProgressHandler == null){
                     return;

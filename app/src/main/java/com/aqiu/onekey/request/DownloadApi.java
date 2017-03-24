@@ -12,6 +12,6 @@ import retrofit2.http.Streaming;
 
 public interface DownloadApi {
     @Streaming
-    @GET("/22.apk")
+    @GET("22.apk")
     Call<ResponseBody> retrofitDownload();
 }
